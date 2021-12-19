@@ -83,6 +83,10 @@ const jobSchema = new mongoose.Schema({
             message : 'Please select correct options for Experience.'
         }
     },
+    appliedCandidates : {
+        type : [] ,
+        required : true
+    },
     salary : {
         type : Number,
         required : [true, 'Please enter expected salary for this job.']
