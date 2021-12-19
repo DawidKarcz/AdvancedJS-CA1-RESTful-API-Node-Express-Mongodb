@@ -31,11 +31,11 @@ const userSchema = new mongoose.Schema({
     },
     education: { 
       type: String ,
-      default: '' 
+      default: [''] 
     },
     skills: {
       type: String , 
-      default: '' 
+      default: [''] 
     },
     projects: {
       type: String ,
