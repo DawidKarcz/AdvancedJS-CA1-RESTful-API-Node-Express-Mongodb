@@ -29,6 +29,43 @@ const userSchema = new mongoose.Schema({
         minlength : [8, 'Your password must be at least 8 characters long'],
         select : false
     },
+    education: { 
+      type: String ,
+      default: '' 
+    },
+    skills: {
+      type: String , 
+      default: '' 
+    },
+    projects: {
+      type: String ,
+      default: '' 
+    },
+    experience: {
+      type: String , 
+      default: ''
+    },
+    address: { 
+      type: String ,
+      default:''
+    },
+    about: { 
+      type: String ,
+      default:''
+    },
+    portfolio: { 
+      type: String ,
+      default:''
+    },
+    mobileNumber: { 
+      type: String , 
+      default:''
+    },
+      username : {
+      type : String,
+      default : ''
+    },
+    appliedJobs: [],
     createdAt : {
         type : Date,
         default : Date.now
