@@ -30,19 +30,19 @@ const userSchema = new mongoose.Schema({
         select : false
     },
     education: { 
-      type: String ,
+      type: [] ,
       default: [''] 
     },
     skills: {
-      type: String , 
+      type: []  , 
       default: [''] 
     },
     projects: {
-      type: String ,
+      type: []  ,
       default: '' 
     },
     experience: {
-      type: String , 
+      type: []  , 
       default: ''
     },
     address: { 
