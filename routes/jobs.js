@@ -24,5 +24,5 @@ router.route('/job/new').post(isAuthenticatedUser, authorizeRoles('employeer', '
 
 router.route('/job/:id').put(isAuthenticatedUser, authorizeRoles('employeer', 'admin'), updateJob);
 
-router.route('/job/:id').delete(isAuthenticatedUser, authorizeRoles('employeer', 'admin'), deleteJob);
+router.route('/job/:id').delete(authorizeRoles('employeer', 'admin'), deleteJob);
 module.exports = router;
