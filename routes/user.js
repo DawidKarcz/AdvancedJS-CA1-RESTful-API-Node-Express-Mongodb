@@ -24,7 +24,7 @@ router.route('/me/update').put(updateUser);
 router.route('/me/delete').delete(deleteUser);
 
 // Admin only routes
-router.route('/users').get(getUsers);
+router.route('/users').get(authorizeRoles('admin'),getUsers);
 router.route('/user/:id').delete(authorizeRoles('admin'),deleteUserAdmin);
 
 module.exports = router;
